@@ -1,0 +1,18 @@
+.canvas{
+	width: 1200px;
+	height: 500px;
+}
+.bloco{
+	width: 100px;
+	height: 50px;
+	margin: 10px 10px;
+	background: green; 
+
+}
+#black{
+	width: 100px;
+	height: 50px;
+	margin: 10px 10px;
+	background: green; 
+
+}
