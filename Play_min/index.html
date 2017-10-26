@@ -7,16 +7,62 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h1>Jogo iniciado</h1>
-	<p>Verde (+10pts) Vermelhor(+5pts) Preto(-10pts) Roxo(-5pts)</p>
-		<input id="contador" min="0" type="number" disabled value="0">
-		<button id="start">iniciar</button>
-		<select id ="dificuldade">
-			<option value="1000">Fácil</option>
-			<option value="500">Médio</option>
-			<option value="250">Difícil</option>
-		</select>
-	<div class="canvas"></div>
+	<div id="tutorial">
+		<h3>Saiba como Jogar</h3>
+		<p>O jogo é por Pontuação e com isso você jogador poder ganhar pontos e ao mesmo tempo perder pontos</p>
+		<h4>Regras de Pontuação</h4>
+		<table>
+			<tr>
+				<th>Cor</th>
+				<th>Pontos</th>
+			</tr>
+			<tr>
+				<td>Verde</td>
+				<td>10</td>
+			</tr>
+			<tr>
+				<td>Vermelho</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>Preto</td>
+				<td>- 10</td>
+			</tr>
+			<tr>
+				<td>Roxo</td>
+				<td>- 5</td>
+			</tr>
+		</table>
+		<h4>Como jogar ?</h4>
+		<p>Para pontuar é preciso clicar nas cores, com isso quando for colocado na tela as cores clique o mais rapido possivel</p>
+	</div>
+	<div id="sobre">
+		<h3>Sobre Desenvolvedores</h3>
+		<p>iniciantes na linguagem javascript, foi utilizado jquery e css</p>
+		<h4>Participantes</h4>
+		<ul>
+			<li>Aluno: Jobson José</li>
+			<li>Aluno: Dhiorgenes Santana</li>
+			<li>Professor Orientador: Ranieri Valença</li>
+		</ul>
+		<h4>Tempo e localidade</h4>
+		<p>Duas(2) Horas para Finalizar as Funcionalidades</p>
+		<p>Laboratorio do IFPE campus Igarassu</p>
+	</div>
+	<div class="container">
+		<h1>Play Min</h1>
+		<a href="#" id="saiba">Saiba como Jogar</a>
+		<a href="#" id="equipe">Sobre a Equipe</a>
+			<input id="contador" type="number" min="0" disabled value="0">
+			<button id="start">iniciar</button>
+			<button id="parar">parar</button>
+			<select id ="dificuldade">
+				<option value="1000">Fácil</option>
+				<option value="500">Médio</option>
+				<option value="250">Difícil</option>
+			</select>
+		<div class="canvas"></div>
+	</div>
 </body>
 </html>
 	<script src="index.js"></script>
